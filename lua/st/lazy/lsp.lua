@@ -34,8 +34,9 @@ return {
 
             -- Jump to definition mapping
             vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, opts)
-
-            -- You can add more LSP-specific keymaps here if needed
+            vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, opts)
+            vim.keymap.set('n', '<leader>sh', vim.lsp.buf.signature_help, opts)
+            vim.keymap.set('n', '<S-k>', vim.lsp.buf.hover, opts)
         end
 
         -- Fidget and Mason setup
@@ -144,4 +145,3 @@ return {
         })
     end
 }
-

@@ -30,5 +30,19 @@ return {
         name = "gruvbox-material",
         lazy = false,
         priority = 1000,
+    },
+    {
+        "comfysage/evergarden",
+        lazy = false,
+        priority = 1000,
+        opts = {
+            transparent_background = true,
+            variant = "medium",
+        }
+    },
+    {
+        "catppuccin/nvim",
+        lazy = false,
+        priority = 1000,
     }
 }

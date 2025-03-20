@@ -27,4 +27,5 @@ vim.keymap.set('n', '<leader>ct', ':CMakeTest<CR>', { noremap = true, silent = t
 vim.keymap.set('n', '<leader>cr', ':CMakeRun<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>ck', ':CMakeSelectKit<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>cv', ':CMakeSelectVariant<CR>', { noremap = true, silent = true })
-vim.keymap.set('n', '\\', ':!make -C ./out/Debug && ./out/Debug/main <CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '\\', ':!cmake -S . -B build/ && cmake --build build/ && ./build/main <CR>',
+    { noremap = true, silent = true })
